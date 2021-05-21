@@ -1,0 +1,1282 @@
+Unhandled native exception occurred at 0x7FF6ADD0E737 (SkyrimSE.exe+26E737) on thread 8404!
+
+FrameworkName: NetScriptFramework
+FrameworkVersion: 10
+FrameworkArchitecture: x64
+GameLibrary: SkyrimSE
+GameLibraryVersion: 14
+ApplicationName: SkyrimSE.exe
+ApplicationVersion: 1.5.97.0
+VersionInfo: Successfully loaded
+Time: 21 May 2021 11:47:46.718
+
+Possible relevant objects (7)
+{
+  [   0]    TESObjectCELL(Name: ARTHKeldNarNortheast, FormId: 0000B9FD, File: `Occlusion.esp <- DynDOLOD.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- DynDOLOD.esm <- Skyrim.esm`)
+  [   1]    TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`)
+  [   1]    Character(FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [  33]    BSFadeNode(Name: `skeleton.nif`)
+  [  35]    TESObjectCELL(Name: ARTHKeldNarNorthwest, FormId: 0000B9FE, File: `Occlusion.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- Landscape Fixes For Grass Mods.esp <- DynDOLOD.esm <- FarmhouseChimneys.esp <- Skyrim.esm`)
+  [  75]    BSFadeNode(Name: `MineralPoolBigWater02`)
+  [ 108]    TESObjectCELL(Name: Wilderness, FormId: FF000D6E)
+}
+
+Probable callstack
+{
+  [0]   0x7FF6ADD0E737     (SkyrimSE.exe+26E737)          TESObjectCELL::unk_26E730+7
+  [1]   0x7FF6ADBE7F62     (SkyrimSE.exe+147F62)          unk_147BB0+3B2
+  [2]   0x7FF6ADD3416D     (SkyrimSE.exe+29416D)          TESObjectREFR::unk_294000+16D
+  [3]   0x7FF6ADBF7146     (SkyrimSE.exe+157146)          TES::unk_157030+116
+  [4]   0x7FF6ADBE621E     (SkyrimSE.exe+14621E)          QueuedTree::unk_1460A0+17E
+  [5]   0x7FF6ADBEAF91     (SkyrimSE.exe+14AF91)          unk_14AF70+21
+  [6]   0x7FF6AE7CCDCF     (SkyrimSE.exe+D2CDCF)          IOManager::unk_D2CCE0+EF
+  [7]   0x7FF6AE0537DE     (SkyrimSE.exe+5B37DE)          unk_5B3760+7E
+  [8]   0x7FFFFA0E168E     (KERNELBASE.dll+2168E)         
+  [9]   0x7FF6AE0E0A27     (SkyrimSE.exe+640A27)          Job_IO_640970+B7
+  [10]  0x7FF6AE6D4C48     (SkyrimSE.exe+C34C48)          BSJobs::JobThread::Func1_C34930+318
+  [11]  0x7FF6AE6AD6BD     (SkyrimSE.exe+C0D6BD)          StartAddress_0_C0D680+3D
+  [12]  0x7FFFFB1F7034     (KERNEL32.DLL+17034)           
+  [13]  0x7FFFFC7E2651     (ntdll.dll+52651)              
+}
+
+Registers
+{
+  AX:       0x0                (NULL)
+  BX:       0x17FFBC1F700      (QueuedCharacter*)
+  CX:       0x17CA3819D00      (TESObjectCELL*) -> (Name: ARTHKeldNarNortheast, FormId: 0000B9FD, File: `Occlusion.esp <- DynDOLOD.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- DynDOLOD.esm <- Skyrim.esm`)
+  DX:       0x3                (u8):[3]
+  SI:       0x0                (NULL)
+  DI:       0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  BP:       0x8D8EFFB50        (void*)
+  SP:       0x8D8EFFAC8        (void*)
+  IP:       0x7FF6ADD0E737     (SkyrimSE.exe+26E737) (void*)
+  R8:       0x3                (u8):[3]
+  R9:       0x17FFBC1F700      (QueuedCharacter*)
+  R10:      0x0                (NULL)
+  R11:      0x8D8EFF880        (void*)
+  R12:      0x1                (u8):[1]
+  R13:      0x7FF6AF962C80     (SkyrimSE.exe+1EC2C80) (void*)
+  R14:      0x17B5B45C798      (char*) "g"
+  R15:      0x89F62988         (u32):[2314611080]
+  Flags:    0x10206           
+  XMM0:     (double)1.42609246117185E+248 / (float)1.530108E+31
+  XMM1:     (double)3.68219852811332E+180 / (float)1.746593E+31
+  XMM2:     (double)0 / (float)0
+  XMM3:     (double)0 / (float)0
+  XMM4:     (double)0 / (float)0
+  XMM5:     (double)0 / (float)0
+  XMM6:     (double)0 / (float)0
+  XMM7:     (double)0 / (float)0
+  XMM8:     (double)0 / (float)0
+  XMM9:     (double)0 / (float)0
+  XMM10:    (double)0 / (float)0
+  XMM11:    (double)0 / (float)0
+  XMM12:    (double)0 / (float)0
+  XMM13:    (double)0 / (float)0
+  XMM14:    (double)0 / (float)0
+  XMM15:    (double)0 / (float)0
+}
+
+Stack
+{
+  [SP+0]    0x7FF6ADBE7F62     (SkyrimSE.exe+147F62) (void*)
+  [SP+8]    0x17FFBC1F700      (QueuedCharacter*)
+  [SP+10]   0x17FFBC1F700      (QueuedCharacter*)
+  [SP+18]   0x8D8EFFB50        (void*)
+  [SP+20]   0x0                (NULL)
+  [SP+28]   0x8D8EFFB08        (QueuedCharacter**)
+  [SP+30]   0x8D8EFFB04        (void*)
+  [SP+38]   0x13D99B           (u32):[1300891]
+  [SP+40]   0x17FFBC1F700      (QueuedCharacter*)
+  [SP+48]   0x17FFBC1F700      (QueuedCharacter*)
+  [SP+50]   0x7FF689F62988     (u64):[140696853293448]
+  [SP+58]   0x7FF60013D99B     (u64):[140694539983259]
+  [SP+60]   0x89F62988         (u32):[2314611080]
+  [SP+68]   0x17B00000068      (void*)
+  [SP+70]   0x17C00000067      (void*)
+  [SP+78]   0x7FF6AF962D18     (SkyrimSE.exe+1EC2D18) (void*)
+  [SP+80]   0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+88]   0x5F8              (u16):[1528]
+  [SP+90]   0x5F0              (u16):[1520]
+  [SP+98]   0x768              (u16):[1896]
+  [SP+A0]   0x17B5B45C030      (void*)
+  [SP+A8]   0x17B5B45C030      (void*)
+  [SP+B0]   0x7FF6ADD3416D     (SkyrimSE.exe+29416D) (void*)
+  [SP+B8]   0x7FF6AF962C80     (SkyrimSE.exe+1EC2C80) (void*)
+  [SP+C0]   0x0                (NULL)
+  [SP+C8]   0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+D0]   0x17FFFFFFFFE      (void*)
+  [SP+D8]   0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+E0]   0x2B               (u8):[43]
+  [SP+E8]   0x4E20             (u16):[20000]
+  [SP+F0]   0x2B               (u8):[43]
+  [SP+F8]   0x17F5E6FF880      (BSFadeNode*) -> (Name: `skeleton.nif`)
+  [SP+100]  0x17FFBC1F100      (QueuedCharacter*)
+  [SP+108]  0x17C9C02FEC0      (TESObjectCELL*) -> (Name: ARTHKeldNarNorthwest, FormId: 0000B9FE, File: `Occlusion.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- Landscape Fixes For Grass Mods.esp <- DynDOLOD.esm <- FarmhouseChimneys.esp <- Skyrim.esm`)
+  [SP+110]  0x7FF6ADBF7146     (SkyrimSE.exe+157146) (void*)
+  [SP+118]  0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+120]  0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+128]  0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+130]  0x17B2F147078      (void*)
+  [SP+138]  0x17FFBC1F100      (QueuedCharacter*)
+  [SP+140]  0x17CA38B9360      (TESObjectCELL**) -> (Name: ARTHKeldNarNortheast, FormId: 0000B9FD, File: `Occlusion.esp <- DynDOLOD.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- DynDOLOD.esm <- Skyrim.esm`)
+  [SP+148]  0x1                (u8):[1]
+  [SP+150]  0x7FF6ADBE621E     (SkyrimSE.exe+14621E) (void*)
+  [SP+158]  0x17B5B45C798      (char*) "g"
+  [SP+160]  0x17CA38B9360      (TESObjectCELL**) -> (Name: ARTHKeldNarNortheast, FormId: 0000B9FD, File: `Occlusion.esp <- DynDOLOD.esp <- Elysium - Conflict Resolution Patch.esp <- Keld-Nar + Clockwork Patch.esp <- Clockwork.esp <- Keld-Nar.esp <- DynDOLOD.esm <- Skyrim.esm`)
+  [SP+168]  0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+170]  0x17C6D37FF80      (SynchronizedPriorityQueue<NiPointer<IOTask>>*)
+  [SP+178]  0x17EEBFA6900      (void*)
+  [SP+180]  0x0                (NULL)
+  [SP+188]  0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+190]  0x7FF6ADBEAF91     (SkyrimSE.exe+14AF91) (void*)
+  [SP+198]  0x4E20             (u16):[20000]
+  [SP+1A0]  0xC48A3DCAEC       (u64):[844132895468]
+  [SP+1A8]  0xFFFFFFFF         (u32):[4294967295]
+  [SP+1B0]  0x17C6CCEC540      (IOManager*)
+  [SP+1B8]  0x17FFBC1F100      (QueuedCharacter*)
+  [SP+1C0]  0x7FF6AE7CCDCF     (SkyrimSE.exe+D2CDCF) (void*)
+  [SP+1C8]  0x17B0013D99B      (void*)
+  [SP+1D0]  0x2                (u8):[2]
+  [SP+1D8]  0xC                (u8):[12]
+  [SP+1E0]  0x17CA38B9300      (Character*) -> (FormId: 4A005849, File: `Keld-Nar.esp`, BaseForm: TESNPC(Name: `Kalfgar`, FormId: 4A005844, File: `Synthesis.esp <- KN_FacegenForKids.esp <- Keld-Nar.esp`))
+  [SP+1E8]  0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+1F0]  0x0                (NULL)
+  [SP+1F8]  0x7FF6B0A97784     (SkyrimSE.exe+2FF7784) (void*)
+  [SP+200]  0x1                (u8):[1]
+  [SP+208]  0x7FF6B0A97780     (SkyrimSE.exe+2FF7780) (void*)
+  [SP+210]  0x7FF6B0A97788     (SkyrimSE.exe+2FF7788) (void*)
+  [SP+218]  0x17B8B199280      (void*)
+  [SP+220]  0x0                (NULL)
+  [SP+228]  0x8D8EFFD40        (ScrapHeap**)
+  [SP+230]  0x7FF6AE0537DE     (SkyrimSE.exe+5B37DE) (void*)
+  [SP+238]  0x7FF6B0A997E8     (SkyrimSE.exe+2FF97E8) (void*)
+  [SP+240]  0x2                (u8):[2]
+  [SP+248]  0x17CEB640700      (BSFadeNode*) -> (Name: `MineralPoolBigWater02`)
+  [SP+250]  0x17FFBC1F100      (QueuedCharacter*)
+  [SP+258]  0x17CEB640700      (BSFadeNode*) -> (Name: `MineralPoolBigWater02`)
+  [SP+260]  0x17B5B45C798      (char*) "g"
+  [SP+268]  0x0                (NULL)
+  [SP+270]  0x0                (NULL)
+  [SP+278]  0x17B5B45C700      (ScrapHeap*)
+  [SP+280]  0x0                (NULL)
+  [SP+288]  0x8D8EFFD48        (void*)
+  [SP+290]  0x0                (NULL)
+  [SP+298]  0x0                (NULL)
+  [SP+2A0]  0x0                (NULL)
+  [SP+2A8]  0x0                (NULL)
+  [SP+2B0]  0x0                (NULL)
+  [SP+2B8]  0x0                (NULL)
+  [SP+2C0]  0x0                (NULL)
+  [SP+2C8]  0x17CEB640700      (BSFadeNode*) -> (Name: `MineralPoolBigWater02`)
+  [SP+2D0]  0x0                (NULL)
+  [SP+2D8]  0x8D8EFFE40        (void*)
+  [SP+2E0]  0x2                (u8):[2]
+  [SP+2E8]  0x244009426        (u64):[9730823206] (f32):[514.3148]
+  [SP+2F0]  0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+2F8]  0x17CEB640700      (BSFadeNode*) -> (Name: `MineralPoolBigWater02`)
+  [SP+300]  0x0                (NULL)
+  [SP+308]  0x0                (NULL)
+  [SP+310]  0x0                (NULL)
+  [SP+318]  0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+320]  0x7FFFFA0E168E     (KERNELBASE.dll+2168E) (void*)
+  [SP+328]  0x0                (NULL)
+  [SP+330]  0x7FF6AE0E0A27     (SkyrimSE.exe+640A27) (void*)
+  [SP+338]  0x8D8EFFE40        (void*)
+  [SP+340]  0x7FF6B0CD3458     (SkyrimSE.exe+3233458) (void*)
+  [SP+348]  0xFFFFFFFF00000000 (i64):[-4294967296]
+  [SP+350]  0x17CD8A65300      (TESObjectCELL*) -> (Name: Wilderness, FormId: FF000D6E)
+  [SP+358]  0xFFFFFFFFFFFFFFFE (i64):[-2]
+  [SP+360]  0x17B00000001      (void*)
+  [SP+368]  0x0                (NULL)
+  [SP+370]  0x7FF6AE6D2A81     (SkyrimSE.exe+C32A81) (void*)
+  [SP+378]  0x0                (NULL)
+  [SP+380]  0x0                (NULL)
+  [SP+388]  0x0                (NULL)
+  [SP+390]  0x0                (NULL)
+  [SP+398]  0x3                (u8):[3]
+  [SP+3A0]  0x7FF6B0A99798     (SkyrimSE.exe+2FF9798) (void*)
+  [SP+3A8]  0x0                (NULL)
+  [SP+3B0]  0x17B8B199280      (void*)
+  [SP+3B8]  0x7FF6B0A99718     (SkyrimSE.exe+2FF9718) (BSJobs::JobThread*)
+  [SP+3C0]  0x7FF6AE6D4C48     (SkyrimSE.exe+C34C48) (void*)
+  [SP+3C8]  0x4                (u8):[4]
+  [SP+3D0]  0x4                (u8):[4]
+  [SP+3D8]  0x0                (NULL)
+  [SP+3E0]  0x70C              (u16):[1804]
+  [SP+3E8]  0x0                (NULL)
+  [SP+3F0]  0x0                (NULL)
+  [SP+3F8]  0x0                (NULL)
+  [SP+400]  0x0                (NULL)
+  [SP+408]  0x0                (NULL)
+  [SP+410]  0x0                (NULL)
+  [SP+418]  0x7FF6B0A99718     (SkyrimSE.exe+2FF9718) (BSJobs::JobThread*)
+  [SP+420]  0x7FF6AE6AD6BD     (SkyrimSE.exe+C0D6BD) (void*)
+  [SP+428]  0x1122DC           (u32):[1123036]
+  [SP+430]  0x1122DB           (u32):[1123035]
+  [SP+438]  0x0                (NULL)
+  [SP+440]  0x17B2F164DE8      (void*)
+  [SP+448]  0x7FF6B0A99718     (SkyrimSE.exe+2FF9718) (BSJobs::JobThread*)
+  [SP+450]  0x0                (NULL)
+  [SP+458]  0x0                (NULL)
+  [SP+460]  0x7FFFFB1F7034     (KERNEL32.DLL+17034) (void*)
+  [SP+468]  0x0                (NULL)
+  [SP+470]  0x0                (NULL)
+  [SP+478]  0x0                (NULL)
+  [SP+480]  0x0                (NULL)
+  [SP+488]  0x0                (NULL)
+  [SP+490]  0x7FFFFC7E2651     (ntdll.dll+52651) (void*)
+  [SP+498]  0x0                (NULL)
+  [SP+4A0]  0x0                (NULL)
+  [SP+4A8]  0x0                (NULL)
+  [SP+4B0]  0x0                (NULL)
+  [SP+4B8]  0x0                (NULL)
+  [SP+4C0]  0x0                (NULL)
+  [SP+4C8]  0xBC42A4FB00000000 (i64):[-4881157648172449792]
+  [SP+4D0]  0x0                (NULL)
+  [SP+4D8]  0x0                (NULL)
+  [SP+4E0]  0x7FFFFA1CB6A0     (KERNELBASE.dll+10B6A0) (void*)
+  [SP+4E8]  0x8D8EFEC40        (void*)
+  [SP+4F0]  0xFFFE8CBC24B60    (u64):[4503499966663520]
+  [SP+4F8]  0x7FFF465E125B     (u64):[140734373958235] (f32):[14212.59]
+  [SP+500]  0x8D8EFEC40        (void*)
+  [SP+508]  0x0                (NULL)
+  [SP+510]  0x0                (NULL)
+  [SP+518]  0x0                (NULL)
+  [SP+520]  0x0                (NULL)
+  [SP+528]  0x0                (NULL)
+  [SP+530]  0x0                (NULL)
+}
+
+Modules
+{
+  SkyrimSE.exe:                                     0x7FF6ADAA0000
+  ntdll.dll:                                        0x7FFFFC790000
+  KERNEL32.DLL:                                     0x7FFFFB1E0000
+  KERNELBASE.dll:                                   0x7FFFFA0C0000
+  USER32.dll:                                       0x7FFFFB740000
+  win32u.dll:                                       0x7FFFF9F30000
+  GDI32.dll:                                        0x7FFFFA940000
+  gdi32full.dll:                                    0x7FFFFA390000
+  msvcp_win.dll:                                    0x7FFFFA750000
+  ucrtbase.dll:                                     0x7FFFFA5A0000
+  ADVAPI32.dll:                                     0x7FFFFB600000
+  msvcrt.dll:                                       0x7FFFFA8A0000
+  sechost.dll:                                      0x7FFFFA970000
+  RPCRT4.dll:                                       0x7FFFFABC0000
+  SHELL32.dll:                                      0x7FFFFBF10000
+  ole32.dll:                                        0x7FFFFBDE0000
+  combase.dll:                                      0x7FFFFB2A0000
+  WS2_32.dll:                                       0x7FFFFB170000
+  SETUPAPI.dll:                                     0x7FFFFACF0000
+  cfgmgr32.dll:                                     0x7FFFFA550000
+  bcrypt.dll:                                       0x7FFFFA6A0000
+  X3DAudio1_7.dll:                                  0x70CF0000
+  XINPUT1_3.dll:                                    0x400000
+  OLEAUT32.dll:                                     0x7FFFFBC30000
+  DINPUT8.dll:                                      0x7FFF91390000
+  binkw64.dll:                                      0x180000000
+  WINHTTP.dll:                                      0x7FFF73AC0000
+  steam_api64.dll:                                  0x70CB0000
+  IPHLPAPI.DLL:                                     0x7FFFF9350000
+  MSVCP140.dll:                                     0x7FFFE7660000
+  WSOCK32.dll:                                      0x7FFFE7E40000
+  COMDLG32.dll:                                     0x7FFFFC670000
+  VCRUNTIME140.dll:                                 0x7FFFE9BC0000
+  d3dx9_42.dll:                                     0x7FFFD0AA0000
+  shcore.dll:                                       0x7FFFFBAE0000
+  SHLWAPI.dll:                                      0x7FFFFBBA0000
+  HID.DLL:                                          0x7FFFF87D0000
+  WINMM.dll:                                        0x7FFFF0F60000
+  dxgi.dll:                                         0x6F200000
+  VCRUNTIME140_1.dll:                               0x7FFFE9CD0000
+  COMCTL32.dll:                                     0x7FFFECFA0000
+  tbbmalloc.dll:                                    0x7FFF8E8E0000
+  UxTheme.dll:                                      0x7FFFF7980000
+  tbb.dll:                                          0x7FFF8DBD0000
+  vulkan-1.dll:                                     0x7FFF739B0000
+  d3d11.dll:                                        0x17B2CB40000
+  WINHTTP.DLL:                                      0x7FFFED6B0000
+  d3dx11_43.dll:                                    0x7FFF8DB80000
+  D3DCOMPILER_43.dll:                               0x7FFF73740000
+  IMM32.DLL:                                        0x7FFFFBC00000
+  dxgi.dll:                                         0x7FFFF8810000
+  skse64_steam_loader.dll:                          0x7FFFA5990000
+  VERSION.dll:                                      0x7FFFF28A0000
+  windows.storage.dll:                              0x7FFFF8040000
+  Wldp.dll:                                         0x7FFFF9940000
+  profapi.dll:                                      0x7FFFF9E10000
+  inputhost.dll:                                    0x7FFFEADF0000
+  wintypes.dll:                                     0x7FFFF5DD0000
+  CoreMessaging.dll:                                0x7FFFF7490000
+  PROPSYS.dll:                                      0x7FFFF5B10000
+  CoreUIComponents.dll:                             0x7FFFF7130000
+  bcryptPrimitives.dll:                             0x7FFFFA6D0000
+  ntmarta.dll:                                      0x7FFFF8C10000
+  kernel.appcore.dll:                               0x7FFFF7E40000
+  usvfs_x64.dll:                                    0x7FFFD2040000
+  steamclient64.dll:                                0x7FFF71670000
+  CRYPT32.dll:                                      0x7FFFF9F60000
+  imagehlp.dll:                                     0x7FFFFBD60000
+  PSAPI.DLL:                                        0x7FFFFC660000
+  tier0_s64.dll:                                    0x7FFF735C0000
+  vstdlib_s64.dll:                                  0x7FFF73540000
+  MSWSOCK.dll:                                      0x7FFFF96B0000
+  Secur32.dll:                                      0x7FFFE6520000
+  SSPICLI.DLL:                                      0x7FFFF9D90000
+  CRYPTBASE.DLL:                                    0x7FFFF98A0000
+  NetScriptFramework.Runtime.dll:                   0x7FFF91350000
+  dbghelp.dll:                                      0x7FFFF3100000
+  mscoree.dll:                                      0x7FFFA59D0000
+  mscoreei.dll:                                     0x7FFF91D70000
+  clr.dll:                                          0x7FFFAB8D0000
+  VCRUNTIME140_CLR0400.dll:                         0x7FFFED360000
+  ucrtbase_clr0400.dll:                             0x7FFFCF040000
+  mscorlib.ni.dll:                                  0x7FFF89DB0000
+  clrjit.dll:                                       0x7FFFC46B0000
+  amsi.dll:                                         0x7FFFE9C10000
+  USERENV.dll:                                      0x7FFFF9DD0000
+  MpOav.dll:                                        0x7FFFE3090000
+  MPCLIENT.DLL:                                     0x7FFFE89D0000
+  gpapi.dll:                                        0x7FFFF87E0000
+  System.ni.dll:                                    0x7FFF9EA70000
+  System.Core.ni.dll:                               0x7FFF92110000
+  urlmon.dll:                                       0x7FFFEE540000
+  iertutil.dll:                                     0x7FFFEE290000
+  NetScriptFramework.SkyrimSE.dll:                  0x7FFF73420000
+  CRYPTSP.dll:                                      0x7FFFF9880000
+  rsaenh.dll:                                       0x7FFFF8FE0000
+  System.Numerics.ni.dll:                           0x7FFF733C0000
+  System.Runtime.Serialization.ni.dll:              0x7FFF71320000
+  System.Data.ni.dll:                               0x7FFF709A0000
+  System.Data.dll:                                  0x7FFF70630000
+  System.Xml.ni.dll:                                0x7FFF6FD80000
+  EngineFixes.dll:                                  0x7FFF73200000
+  skse64_1_5_97.dll:                                0x7FFF72BA0000
+  AHZmoreHUDInventory.dll:                          0x7FFF73170000
+  AHZmoreHUDPlugin.dll:                             0x7FFF730E0000
+  BetterJumpingSE.dll:                              0x7FFF73360000
+  CCExtender.dll:                                   0x7FFF72E30000
+  ClassicSprinting.dll:                             0x7FFF72DE0000
+  ConsoleUtilSSE.dll:                               0x7FFF72D50000
+  CopyPaste.dll:                                    0x7FFF6FD20000
+  DifficultyBalance.dll:                            0x7FFF6FCC0000
+  DVLaSS.dll:                                       0x7FFF6FC60000
+  DynamicAnimationReplacer.dll:                     0x7FFF6FBF0000
+  ENBHelperSE.dll:                                  0x7FFF6FB60000
+  encounter_zones_unlocked.dll:                     0x7FFF6FB00000
+  EquipEnchantmentFix.dll:                          0x7FFF6FA80000
+  EquipmentDurability.dll:                          0x7FFF6FA10000
+  Experience.dll:                                   0x7FFF6F9B0000
+  fiss.dll:                                         0x7FFF72FD0000
+  FixNotesForSkyUI.dll:                             0x7FFF91E50000
+  Fuz Ro D'oh.dll:                                  0x7FFF6F940000
+  hdtSMP64.dll:                                     0x7FFF67B80000
+  HorseStaminaHUD.dll:                              0x7FFF6F880000
+  ImprovedCamera.dll:                               0x7FFF6F820000
+  JContainers64.dll:                                0x7FFF6F4E0000
+  KeyboardShortcutsFix.dll:                         0x7FFF6F4A0000
+  MaxsuAIProcessFix.dll:                            0x7FFF730B0000
+  MaxsuOnHitAnimFW.dll:                             0x7FFF6F440000
+  MaxsuPowerAttackControl.dll:                      0x7FFF6F3F0000
+  MaxsuStaggerDirFix.dll:                           0x7FFF6F3A0000
+  mfgfix.dll:                                       0x7FFF67AC0000
+  MoreInformativeConsole.dll:                       0x7FFF6F330000
+  No Lockpick Activate.dll:                         0x7FFF6EEF0000
+  PapyrusUtil.dll:                                  0x7FFF67940000
+  po3_EnhancedReanimation.dll:                      0x7FFF6EEA0000
+  po3_EssentialFavorites.dll:                       0x17B62430000
+  po3_FavoriteMiscItems.dll:                        0x7FFF678A0000
+  po3_FEC.dll:                                      0x7FFF67840000
+  po3_PapyrusExtender.dll:                          0x7FFF676E0000
+  po3_SalesOverflowSolved.dll:                      0x7FFF67690000
+  po3_SpellPerkItemDistributor.dll:                 0x7FFF67620000
+  po3_SplashesOfSkyrim.dll:                         0x7FFF675C0000
+  po3_ToYourFace.dll:                               0x7FFF67570000
+  po3_VampiresCastNoShadows.dll:                    0x7FFF67520000
+  QuickLootRE.dll:                                  0x7FFF67470000
+  RememberLockpickAngle.dll:                        0x7FFF67420000
+  ScaleformTranslationPP.dll:                       0x7FFF67340000
+  ScrambledEggchantments.dll:                       0x7FFF672A0000
+  ShaderTools.dll:                                  0x7FFF67200000
+  D3DCOMPILER_47.dll:                               0x7FFF66DA0000
+  SimplyKnock.dll:                                  0x7FFF6F300000
+  SinkOrSwim.dll:                                   0x7FFF66CE0000
+  skee64.dll:                                       0x7FFF66AF0000
+  SmoothCam.dll:                                    0x7FFF669C0000
+  SSEDisplayTweaks.dll:                             0x7FFF668A0000
+  StayAtSystemPageSE.dll:                           0x7FFF66810000
+  StormLightning.dll:                               0x7FFF66790000
+  WhoseQuestIsItAnyway.dll:                         0x7FFF666E0000
+  YesImSure.dll:                                    0x7FFF66630000
+  zxlice backstab and parry.dll:                    0x7FFF665E0000
+  gameoverlayrenderer64.dll:                        0x7FFF663F0000
+  MSCTF.dll:                                        0x7FFFFB960000
+  textinputframework.dll:                           0x7FFFEB380000
+  amdvlk64.dll:                                     0x7FFF63220000
+  amdihk64.dll:                                     0x7FFFEECC0000
+  VkLayer_steam_fossilize64.dll:                    0x7FFF7E110000
+  SteamOverlayVulkanLayer64.dll:                    0x7FFF7E0D0000
+  ReShade64.dll:                                    0x7FFF6EAA0000
+  WININET.dll:                                      0x7FFFE94A0000
+  fpsmonvk64.dll:                                   0x7FFF7E080000
+  dwmapi.dll:                                       0x7FFFF7C60000
+  DEVOBJ.dll:                                       0x7FFFF9CA0000
+  WINTRUST.dll:                                     0x7FFFF9ED0000
+  MSASN1.dll:                                       0x7FFFF9AC0000
+  d3dcompiler_46e.dll:                              0x7FFF66030000
+  d3d11_dxvk.dll:                                   0x6A340000
+  ondemandconnroutehelper.dll:                      0x7FFFE46A0000
+  NSI.dll:                                          0x17B97730000
+  WINNSI.DLL:                                       0x7FFFF3000000
+  DPAPI.DLL:                                        0x7FFFF9CD0000
+  DNSAPI.dll:                                       0x7FFFF93A0000
+  rasadhlp.dll:                                     0x7FFFECED0000
+  fwpuclnt.dll:                                     0x7FFFED630000
+  schannel.DLL:                                     0x7FFFF8F00000
+  mskeyprotect.dll:                                 0x7FFFDD8C0000
+  NTASN1.dll:                                       0x7FFFF9970000
+  cryptnet.dll:                                     0x7FFFE17B0000
+  ncrypt.dll:                                       0x7FFFF99B0000
+  ncryptsslp.dll:                                   0x7FFFDD8E0000
+  WindowsCodecs.dll:                                0x7FFFF3D60000
+  clbcatq.dll:                                      0x7FFFFA7F0000
+  MMDevApi.dll:                                     0x7FFFF2560000
+  AUDIOSES.DLL:                                     0x7FFFF2930000
+  powrprof.dll:                                     0x7FFFF9470000
+  UMPDC.dll:                                        0x7FFFF9330000
+  Windows.UI.dll:                                   0x7FFFEB7B0000
+  WindowManagementAPI.dll:                          0x7FFFF4440000
+  twinapi.appcore.dll:                              0x7FFFF40F0000
+  XAudio2_7.dll:                                    0x7FFF62FA0000
+  resourcepolicyclient.dll:                         0x7FFFF7A60000
+  avrt.dll:                                         0x7FFFF4C10000
+  DSOUND.DLL:                                       0x7FFFC9280000
+  winmmbase.dll:                                    0x7FFFE9B40000
+  atig6pxx.dll:                                     0x7FFFE21A0000
+  OPENGL32.DLL:                                     0x7FFFC6210000
+  GLU32.dll:                                        0x7FFFE2B20000
+  AppXDeploymentClient.dll:                         0x7FFFF3FF0000
+  wbemprox.dll:                                     0x7FFFC2570000
+  wbemcomn.dll:                                     0x7FFFE8AD0000
+  wbemsvc.dll:                                      0x7FFFC2550000
+  fastprox.dll:                                     0x7FFFE3230000
+  dhcpcsvc6.DLL:                                    0x7FFFF2540000
+  dhcpcsvc.DLL:                                     0x7FFFF3010000
+  webio.dll:                                        0x7FFFE9E30000
+}
+
+Plugins (11)
+{
+  actor_limit
+  {
+    Name: "Actor Limit Plugin"
+    Version: 2
+    Assembly: ActorLimitPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  better_stealing
+  {
+    Name: "Better Stealing"
+    Version: 2
+    Author: "meh321"
+    Assembly: BetterStealing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  bug_fixes
+  {
+    Name: "Bug Fixes SSE"
+    Version: 3
+    Author: "meh321"
+    Assembly: BugFixesSSE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  custom_skills
+  {
+    Name: "Custom Skills"
+    Version: 1
+    Author: "meh321"
+    Assembly: CustomSkills, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  gameplaytweaks
+  {
+    Name: "Gameplay Tweaks"
+    Version: 5
+    Author: "meh321"
+    Assembly: GamePlayTweaks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  grasscontrol
+  {
+    Name: "Grass Control"
+    Version: 6
+    Author: "meh321"
+    Assembly: GrassControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  item_durability
+  {
+    Name: "Item Durability"
+    Version: 3
+    Author: "meh321"
+    Assembly: ItemDurability, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  plugin.miscfix
+  {
+    Name: "miscfix"
+    Version: 1
+    Author: "Author"
+    Website: "https://github.com/crashme/"
+    Assembly: MiscFix, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  ScrambledBugs
+  {
+    Name: "Scrambled Bugs"
+    Version: 8
+    Author: "meh321 and KernalsEgg"
+    Assembly: ScrambledBugs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  un_ethereal
+  {
+    Name: "Uninterrupted Ethereal Form"
+    Version: 2
+    Author: "meh321"
+    Assembly: UninterruptedEtherealForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+
+  un_invis
+  {
+    Name: "Uninterrupted Invisibility"
+    Version: 2
+    Author: "meh321"
+    Assembly: UninterruptedInvisibility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  }
+}
+
+Extra
+{
+  Currently executing hooks (0)
+  {
+  }
+}
+
+Game plugins (713)
+{
+  [00] Skyrim.esm
+  [01] Update.esm
+  [02] Dawnguard.esm
+  [03] HearthFires.esm
+  [04] Dragonborn.esm
+  [05] Unofficial Skyrim Special Edition Patch.esp
+  [06] Lanterns Of Skyrim II.esm
+  [07] FarmhouseChimneys.esp
+  [08] ETaC - RESOURCES.esm
+  [09] FISS.esp
+  [0A] High Poly Head.esm
+  [0B] LegacyoftheDragonborn.esm
+  [0C] Vigilant.esm
+  [0D] Wyrmstooth.esp
+  [0E] 3DNPC.esp
+  [0F] SGEyebrows.esp
+  [10] WheelsOfLull.esp
+  [11] Unslaad.esm
+  [12] Falskaar.esm
+  [13] AKSkyrimUnderground.esm
+  [14] BBLuxurySuite.esm
+  [15] FlowerGirls SE.esm
+  [16] DynDOLOD.esm
+  [17] Weapons Armor Clothing & Clutter Fixes.esp
+  [18] DBM_RelicNotifications.esp
+  [19] Landscape Fixes For Grass Mods.esp
+  [1A] Run For Your Lives.esp
+  [1B] SkyUI_SE.esp
+  [1C] iHUD.esp
+  [1D] AMatterOfTime.esp
+  [1E] SMIM-SE-Merged-All.esp
+  [1F] Cathedral Weathers.esp
+  [20] WondersofWeather.esp
+  [21] Morning Fogs SSE.esp
+  [22] EnhancedLightsandFX.esp
+  [23] Skysan_ELFX_SMIM_Fix.esp
+  [24] EmbersHD.esp
+  [25] KD - Realistic Fireplaces SE.esp
+  [26] dD - Enhanced Blood Main.esp
+  [27] FireBurns.esp
+  [28] Cathedral Landscapes.esp
+  [29] DepthsOfSkyrim.esp
+  [2A] S3DTrees NextGenerationForests.esp
+  [2B] S3DLandscapes NextGenerationForests.esp
+  [2C] SkyrimImprovedPuddles-DG-HF-DB.esp
+  [2D] Better Dynamic Snow.esp
+  [2E] Prometheus_No_snow_Under_the_roof.esp
+  [2F] Better Dynamic Ash.esp
+  [30] Point The Way.esp
+  [31] LoS II - Tamriel Master Lights.esp
+  [32] AHZBetterDGEntranceSE.esp
+  [33] PilgrimsDelight.esp
+  [34] BentPines.esp
+  [35] Aspens Ablaze.esp
+  [36] fallentreebridgesSSE.esp
+  [37] SpiceOfLife - OrcLStrongholds.esp
+  [38] JKs Skyrim.esp
+  [39] WhiterunDefenses.esp
+  [3A] Riften Docks Overhaul.esp
+  [3B] WindhelmSSE.esp
+  [3C] CWE - JK - United.esp
+  [3D] The Great City of Solitude.esp
+  [3E] Dawnstar.esp
+  [3F] Falkreath.esp
+  [40] Dragon Bridge.esp
+  [41] Ivarstead.esp
+  [42] Rorikstead.esp
+  [43] Kynesgrove.esp
+  [44] Karthwasten.esp
+  [45] Darkwater Crossing.esp
+  [46] Shor's Stone.esp
+  [47] Soljund's Sinkhole.esp
+  [48] Whistling Mine.esp
+  [49] Helarchen Creek.esp
+  [4A] Keld-Nar.esp
+  [4B] Fall of Granite Hill.esp
+  [4C] Oakwood.esp
+  [4D] OCW_Obscure's_CollegeofWinterhold.esp
+  [4E] The Great City of Winterhold.esp
+  [4F] ETaC - Riverwood.esp
+  [50] Provincial Courier Service.esp
+  [51] Windhelm Lighthouse.esp
+  [52] SkaalFishingCamp.esp
+  [53] Sepolcri.esp
+  [54] BleakFallsBarrowRevisited.esp
+  [55] EmbershardMineRevisited.esp
+  [56] HaltedStreamCampRevisited.esp
+  [57] SteepfallBurrowRevisited.esp
+  [58] UstengravRevisited.esp
+  [59] WhiteRiverWatchRevisited.esp
+  [5A] Storefront.esp
+  [5B] Open Face Guard Helmets.esp
+  [5C] imp_helm_legend.esp
+  [5D] KatriaBow.esp
+  [5E] HagravenSkinShaders.esp
+  [5F] CFTO.esp
+  [60] Inconsequential NPCs.esp
+  [61] DiverseWerewolvesCollection.esp
+  [62] Inigo.esp
+  [63] NPC Retexture Merge.esp
+  [64] DIVERSE SKYRIM.esp
+  [65] NB-Scars.esp
+  [66] KS Hairdo's.esp
+  [67] Odin - Skyrim Magic Overhaul.esp
+  [68] Complete Crafting Overhaul_Remastered.esp
+  [69] Growl - Werebeasts of Skyrim.esp
+  [6A] Sacrilege - Minimalistic Vampires of Skyrim.esp
+  [6B] Night Eye Overhaul - Sacrilege Version.esp
+  [6C] Wintersun - Faiths of Skyrim.esp
+  [6D] AI Overhaul.esp
+  [6E] Relationship Dialogue Overhaul.esp
+  [6F] honedmetal.esp
+  [70] Guard Dialogue Overhaul.esp
+  [71] MoreToSay.esp
+  [72] Serana Dialogue Edit.esp
+  [73] SeranaDialogAddon.esp
+  [74] PrinceandPauper.esp
+  [75] HearthfireMultiKid.esp
+  [76] HearthfireMultiKid_LastName.esp
+  [77] adoptAventusAretino.esp
+  [78] Immersive Patrols II.esp
+  [79] Bring Out Your Dead.esp
+  [7A] TimingIsEverything.esp
+  [7B] TheChoiceIsYours.esp
+  [7C] Quest Conflict Fixes.esp
+  [7D] SaveTheIcerunner.esp
+  [7E] Gildergreen Regrown.esp
+  [7F] The Paarthurnax Dilemma.esp
+  [80] Castle Volkihar Rebuilt.esp
+  [81] SSoB.esp
+  [82] Wildcat - Combat of Skyrim.esp
+  [83] know_your_enemy.esp
+  [84] DeadlyDragons.esp
+  [85] Zim's Dragon Improvements.esp
+  [86] VioLens SE.esp
+  [87] SkyTEST-RealisticAnimals&Predators.esp
+  [88] Skytest Creature Extension.esp
+  [89] NoRoadPredatorsRedone.esp
+  [8A] Prometheus_BeastSkeletons.esp
+  [8B] DiverseDragonsCollectionSE.esp
+  [8C] ogSplendorDragons.esp
+  [8D] OBIS SE.esp
+  [8E] OBIS SE Patrols Addon.esp
+  [8F] MoreWerewolves.esp
+  [90] BriDraugrOverhaul.esp
+  [91] Draugr Upgrades and Improvements.esp
+  [92] Cannibal Draugr Upgrades and Improvements Patch.esp
+  [93] BloodHorkers.esp
+  [94] ogBogmort.esp
+  [95] Morrowloot Miscellania - Item Distribution.esp
+  [96] EconomyOverhaulandSpeechcraftImprovementsLite.esp
+  [97] Trade & Barter.esp
+  [98] AlchemyAdjustments.esp
+  [99] Summermyst - Enchantments of Skyrim.esp
+  [9A] Summermyst - WACCF Patch.esp
+  [9B] EnchantingAdjustments.esp
+  [9C] Vokrii - Minimalistic Perks of Skyrim.esp
+  [9D] Odin - Vokrii Compatibility Patch.esp
+  [9E] Apocalypse - Magic of Skyrim.esp
+  [9F] Triumvirate - Mage Archetypes.esp
+  [A0] Thunderchild - Epic Shout Package.esp
+  [A1] Reliquary of Myth.esp
+  [A2] ZTH.esp
+  [A3] Unique Items Tweaks.esp
+  [A4] SimplyKnock.esp
+  [A5] QuickLight.esp
+  [A6] DurnehviirResurrected.esp
+  [A7] Improved Shadowmarks.esp
+  [A8] KeeperCarcetteSurvives.esp
+  [A9] WindhelmSegregation.esp
+  [AA] BirdsAndFlocks_SSE.esp
+  [AB] KarstaagReborn.esp
+  [AC] NewArmoury.esp
+  [AD] Animated Armoury - Enchantments.esp
+  [AE] WACCF_Armor and Clothing Extension.esp
+  [AF] aMidianBorn_ContentAddon.esp
+  [B0] Common Clothes and Armors.esp
+  [B1] ktWeaponPackSE.esp
+  [B2] ArtifactsOfBoethiah.esp
+  [B3] icebladeofthemonarch.esp
+  [B4] Fossilsyum.esp
+  [B5] Clockwork.esp
+  [B6] ForgottenCity.esp
+  [B7] Tools of Kagrenac.esp
+  [B8] Identity Crisis.esp
+  [B9] The Tale of Tsatampra Xiros.esp
+  [BA] SnowThroatCave.esp
+  [BB] Missives.esp
+  [BC] Immersive Encounters.esp
+  [BD] Extended Encounters.esp
+  [BE] Lucien.esp
+  [BF] nwsFollowerFramework.esp
+  [C0] Audio Overhaul Skyrim.esp
+  [C1] Immersive Sounds - Compendium.esp
+  [C2] SoundsofSkyrimComplete.esp
+  [C3] IHSS.esp
+  [C4] RealisticHuskySoundsSSE.esp
+  [C5] ENB Light.esp
+  [C6] XPMSE.esp
+  [C7] All Geared Up Derivative.esp
+  [C8] DSerArcheryGameplayOverhaul.esp
+  [C9] Ultimate Dodge Mod.esp
+  [CA] SprintSlide.esp
+  [CB] ImmersiveInteractions.esp
+  [CC] UIExtensions.esp
+  [CD] RealisticWaterTwo.esp
+  [CE] RealisticWaterTwo - Waves - Wyrmstooth.esp
+  [CF] fortdawnguardimmersive.esp
+  [D0] Alternate Start - Live Another Life.esp
+  [D1] DBM_RelicHunter.esp
+  [D2] ELE_SSE.esp
+  [D3] ELE Patches Merge.esp
+  [D4] Synthesis.esp
+  [D5] Skyrim_SE_Nexus .esp
+  [D6] Elvenia.esp
+  [D7] VitalityMode.esp
+  [D8] Better Harvesting.esp
+  [D9] UnexpectedComments.esp
+  [DA] EMCompViljaSkyrim.esp
+  [DB] Serana.esp
+  [DC] LustmordVampireArmor.esp
+  [DD] SofiaFollower.esp
+  [DE] MistySkye.esp
+  [DF] BirdsOfSkyrim_SSE.esp
+  [E0] AKSkyrimUnderground.esp
+  [E1] The Brotherhood of Old.esp
+  [E2] BBLuxurySuiteENM.esp
+  [E3] SexLab-AmorousAdventures.esp
+  [E4] FlowerGirls SE - Adventures.esp
+  [E5] Flower Girls NPC Overhaul.esp
+  [E6] FlowerGirls SE - Bathing Beauties Patch.esp
+  [E7] FlowerGirls SE - IW Patch.esp
+  [E8] FlowerGirls SE - Wintersun.esp
+  [E9] MiasLair.esp
+  [EA] ww_AlternateDBEnding.esp
+  [EB] Immersive Wenches.esp
+  [EC] SimpleHorse.esp
+  [ED] DynDOLOD.esp
+  [FE 000] UHDAP - en0.esp
+  [FE 001] UHDAP - en1.esp
+  [FE 002] UHDAP - en2.esp
+  [FE 003] UHDAP - en3.esp
+  [FE 004] UHDAP - en4.esp
+  [FE 005] UHDAP - MusicHQ.esp
+  [FE 006] Landscape and Water Fixes.esp
+  [FE 007] MajesticMountains_Landscape.esm
+  [FE 008] RealisticWaterTwo - Resources.esm
+  [FE 009] Incoceivable Ice.esp
+  [FE 00A] High Quality Tintmasks.esp
+  [FE 00B] SimpleChildren.esp
+  [FE 00C] Autorun.esp
+  [FE 00D] LoS II - LotD patch.esp
+  [FE 00E] DBM_FacegenForKids.esp
+  [FE 00F] LOTD Exterior Fixes.esp
+  [FE 010] DBM_HallOfHeroesLight.esp
+  [FE 011] DBM_SafehousePlus_Addon.esp
+  [FE 012] LotD - More Airship Locations.esp
+  [FE 013] More DBM Shipping Crates.esp
+  [FE 014] LOTD Skill Trees.esp
+  [FE 015] Vigilant Voiced.esp
+  [FE 016] Vigilant CBBE Patch.esp
+  [FE 017] Vigilant - Book Covers.esp
+  [FE 018] Lanterns Of Wyrmstooth.esp
+  [FE 019] FarmhouseChimneysWyrmstooth.esp
+  [FE 01A] WT_FacegenForKids.esp
+  [FE 01B] JS Dragon Claws - Wyrmstooth Patch.esp
+  [FE 01C] Even More LOTD Crates - Wyrmstooth.esp
+  [FE 01D] WeaponSpeedMultFix.esp
+  [FE 01E] QuestsAreInSkyrimUSSEP.esp
+  [FE 01F] TavernAIFix.esp
+  [FE 020] Clams and Oysters Clipping Fix.esp
+  [FE 021] Landscape For Grass Mods - Military Camps.esp
+  [FE 022] Landscape and Water Fixes - Patch - LFfGM.esp
+  [FE 023] ANDR_HorseExploitsFixed.esp
+  [FE 024] Raven Rock - Fix Exit on Horseback.esp
+  [FE 025] Dawnguard Dont Hunt Cured Vampires.esp
+  [FE 026] ChargeDialogueFix.esp
+  [FE 027] ImperialSoldiersEscortFix.esp
+  [FE 028] SimpleVampFixesSSE.esp
+  [FE 029] MfgFix.esp
+  [FE 02A] Butterflies.esp
+  [FE 02B] ButterfliesUnchained.esp
+  [FE 02C] Incognito.esp
+  [FE 02D] DwemerGatesNoRelock.esp
+  [FE 02E] No Easy Bloodkin.esp
+  [FE 02F] Companions Bloodritual Scene Tweak.esp
+  [FE 030] Only Lover's Dead Give Inheritance Letters.esp
+  [FE 031] Solitude Catacombs.esp
+  [FE 032] Stones of Barenziah - Dawnguard.esp
+  [FE 033] Misc Tweaks - Better Ancient Knowledge Perk.esp
+  [FE 034] Misc Tweaks - Better Horses.esp
+  [FE 035] Misc Tweaks - More Realistic Animal Loot.esp
+  [FE 036] Calcelmo Has Standards.esp
+  [FE 037] HelgenKeepBanditChiefExecutioner.esp
+  [FE 038] Move it Dammit.esp
+  [FE 039] Runandwalkpaces.esp
+  [FE 03A] No More Standing Too Close SSE 1-0.esp
+  [FE 03B] Realistic-Voice.esp
+  [FE 03C] Don'tTalkWithYourMouthFull.esp
+  [FE 03D] Random Encounter Tweaks.esp
+  [FE 03E] dD-No Spinning Death Animation Merged.esp
+  [FE 03F] Fixed body collision.esp
+  [FE 040] SparklesSE.esp
+  [FE 041] SimplySmallerWolfs2.esp
+  [FE 042] Maxsu_PowerAttackControl.esp
+  [FE 043] SinkOrSwim.esp
+  [FE 044] SmoothCam.esp
+  [FE 045] RaceMenu.esp
+  [FE 046] Extended UI.esp
+  [FE 047] AHZmoreHUD.esp
+  [FE 048] AHZmoreHUDInventory.esp
+  [FE 049] SkyRem - Mia.esp
+  [FE 04A] SIDT - Special Edition.esp
+  [FE 04B] Map Markers Complete.esp
+  [FE 04C] Dawnguard Map Markers.esp
+  [FE 04D] HD Lods SSE.esp
+  [FE 04E] LoS II - SMIM patch.esp
+  [FE 04F] CathedralWeatherMCM.esp
+  [FE 050] Dynamic Mountain Fogs.esp
+  [FE 051] Dynamic Mountain Fogs - Cathedral Patch.esp
+  [FE 052] StormLightning.esp
+  [FE 053] VolumeticMists.esp
+  [FE 054] VolumeticMistsSolstheim.esp
+  [FE 055] WoW Dragon Mounds CTD Fix.esp
+  [FE 056] ELFX Fixes.esp
+  [FE 057] Landscape and Water Fixes - Patch - ELFX.esp
+  [FE 058] Smoking Torches And Candles.esp
+  [FE 059] dD-Medium Script Range.esp
+  [FE 05A] dD-Reduced Wound Size.esp
+  [FE 05B] DeadlySpellImpacts.esp
+  [FE 05C] Frost Meshes Patch.esp
+  [FE 05D] Dirt and Blood - Dynamic Visuals.esp
+  [FE 05E] Dirt and Blood - Shader Tweak.esp
+  [FE 05F] RASS - Visual Effects.esp
+  [FE 060] MajesticMountains.esp
+  [FE 061] Cathedral - 3D Pine Grass.esp
+  [FE 062] Veydosevangr Cut for Elysium.esp
+  [FE 063] Moss Rocks.esp
+  [FE 064] Aquatic Jungle.esp
+  [FE 065] Veydosebrom - DoS - Cathedral Patch.esp
+  [FE 066] Enhanced Landscapes - Dead Marsh.esp
+  [FE 067] BDS - MM Patch.esp
+  [FE 068] Better Dynamic Snow - NSUTR Patch.esp
+  [FE 069] WiZkiD Signs - No Snow Under the Roof patch.esp
+  [FE 06A] RoriksteadBasaltCliffs.esp
+  [FE 06B] Manor Roads.esp
+  [FE 06C] SpeedTreeForSkyrim.esp
+  [FE 06D] [pPatch] Bentpines_Navmesh.esp
+  [FE 06E] Reach Tree Replacer Summer.esp
+  [FE 06F] fallenbridgesSSE-Patch.esp
+  [FE 070] LoS II - JKs Skyrim patch.esp
+  [FE 071] LoS II - TML - JKs Skyrim patch.esp
+  [FE 072] JKs Skyrim - Farmhouse Chimneys Patch.esp
+  [FE 073] WPF - JK Skyrim patch.esp
+  [FE 074] Fortified Whiterun - JKs Skyrim Patch.esp
+  [FE 075] WRHorse Statue - Horses Gallore.esp
+  [FE 076] RTDocks - LOS2.esp
+  [FE 077] CWE - JK - United - LoS II - TML.esp
+  [FE 078] The Great City of Solitude Unofficial Patch.esp
+  [FE 079] LoS II - TML - The Great City of Solitude Patch.esp
+  [FE 07A] JKs Skyrim_Dawnstar_Patch.esp
+  [FE 07B] Landscape For Grass Mods - Arthmoor's Falkreath PATCH.esp
+  [FE 07C] LoS II - Falkreath patch.esp
+  [FE 07D] JKs Skyrim_Falkreath_Patch.esp
+  [FE 07E] Landscape For Grass Mods - Arthmoor's Dragon Bridge PATCH.esp
+  [FE 07F] LoS II - Dragon Bridge patch.esp
+  [FE 080] JKs Skyrim_Dragon Bridge_Patch.esp
+  [FE 081] Landscape For Grass Mods - Arthmoor's Ivarstead PATCH.esp
+  [FE 082] LoS II - Ivarstead patch.esp
+  [FE 083] JKs Skyrim_Ivarstead_Patch.esp
+  [FE 084] Landscape For Grass Mods - Arthmoor's Rorikstead PATCH.esp
+  [FE 085] LoS II - Kynesgrove patch.esp
+  [FE 086] LoS II - Karthwasten patch.esp
+  [FE 087] LoS II - Darkwater Crossing patch.esp
+  [FE 088] Landscape For Grass Mods Arthmoor's Shor's Stone PATCH.esp
+  [FE 089] LoS II - Soljund's Skinkhole patch.esp
+  [FE 08A] NSUTR - Whistling Mine Patch.esp
+  [FE 08B] LoS II - Whistling Mine patch.esp
+  [FE 08C] NSUTR - Helarchen Creek patch.esp
+  [FE 08D] LoS II - Helarchen Creek patch.esp
+  [FE 08E] Better Dynamic Snow - Whistling Mine - Helarchen Creek patch.esp
+  [FE 08F] KN_FacegenForKids.esp
+  [FE 090] LoS II - The Fall of Granite Hill patch.esp
+  [FE 091] FarmhouseChimneysGraniteHill.esp
+  [FE 092] Landscape For Grass Mods - Oakwood PATCH.esp
+  [FE 093] LoS II - Oakwood patch.esp
+  [FE 094] Oakwood_FacegenForKids.esp
+  [FE 095] Arthmoor DBM Shipping Crates.esp
+  [FE 096] OCW_LightingPatch_Darker.esp
+  [FE 097] OCW_MusicPatch_VanillaPlus.esp
+  [FE 098] OCW_LotD_FEPatch.esp
+  [FE 099] OCW_WACCF_FEPatch.esp
+  [FE 09A] OCW_QaiS_FEPatch.esp
+  [FE 09B] OCW_MMC_FEPatch.esp
+  [FE 09C] OCW_ELFX_FEPatch.esp
+  [FE 09D] OCW_3DTaP_FEPatch.esp
+  [FE 09E] The Great City of JK's Winterhold - Patch.esp
+  [FE 09F] OCW_TGCoW_FEPatch.esp
+  [FE 0A0] 1-0 The Great Cities ELFX Compatibility - Winterhold - ELFX Base Only.esp
+  [FE 0A1] NSUTR_TGCoWSSE_AiO_patch.esp
+  [FE 0A2] ETaC - Riverwood - JKs Skyrim Patch.esp
+  [FE 0A3] ETAC_Riverwood_FacegenForKids.esp
+  [FE 0A4] Landscape For Grass Mods -Provincial Courier PATCH.esp
+  [FE 0A5] WiZkiD Pavo's House.esp
+  [FE 0A6] WiZkiD Pinewatch.esp
+  [FE 0A7] UniqueBorderGates-All.esp
+  [FE 0A8] UniqueBorderGates-All-PointTheWay.esp
+  [FE 0A9] BetterDG Unique Border Gates Patch.esp
+  [FE 0AA] SolstheimLighthouse.esp
+  [FE 0AB] Sepolcri - JKs Skyrim - Falkreath patch.esp
+  [FE 0AC] BFBR_ELFX_Patch.esp
+  [FE 0AD] UR_ELFX_Patch.esp
+  [FE 0AE] Bee Hives.esp
+  [FE 0AF] JKs Skyrim_Storefront_Patch.esp
+  [FE 0B0] GDOS - Glorious Solitude Door - Rotation Fix.esp
+  [FE 0B1] GDOS - Splendid Mechanized Dwemer Door.esp
+  [FE 0B2] RedBag's Dragonsreach.esp
+  [FE 0B3] Extravagant Blue Palace.esp
+  [FE 0B4] Praedy's AncientFalmerThrone.esp
+  [FE 0B5] HD Stone Quarry and Clay Deposits SE.esp
+  [FE 0B6] immersivehdbanners.esp
+  [FE 0B7] CC'sEnhancedOreVeinsSSE-HearthfirePatch.esp
+  [FE 0B8] Saeri_AetherialCrown.esp
+  [FE 0B9] HD Quill of Germination - Dark.esp
+  [FE 0BA] homeymealyum.esp
+  [FE 0BB] GQJ_DG_vampireamuletfix.esp
+  [FE 0BC] FranklyHDImperialArmorsAndWeapons.esp
+  [FE 0BD] ArteFake.esp
+  [FE 0BE] Better Shrouded Armour SSE - Ancient Replacer Only.esp
+  [FE 0BF] RealRabbitsHD.esp
+  [FE 0C0] Bears of the North.esp
+  [FE 0C1] LightBodyHorsesReplacer.esp
+  [FE 0C2] DynamicCartHorses.esp
+  [FE 0C3] DSL Demonic Shadowmere.esp
+  [FE 0C4] Arvak Reborn.esp
+  [FE 0C5] UniqueBarbas.esp
+  [FE 0C6] AlduinLight.esp
+  [FE 0C7] CFTO - The Great City of Solitude Patch.esp
+  [FE 0C8] CFTO-CoveredCarriages.esp
+  [FE 0C9] CFTO-Lanterns.esp
+  [FE 0CA] RTDocks - CFTO.esp
+  [FE 0CB] IncNPC_FacegenForKids.esp
+  [FE 0CC] MLU - Inigo.esp
+  [FE 0CD] InigoWhistleKey.esp
+  [FE 0CE] Vanilla NPCs SSE Ruhmastered.esp
+  [FE 0CF] FacegenForKids.esp
+  [FE 0D0] CBBE.esp
+  [FE 0D1] VanillaArgoniansRedux.esp
+  [FE 0D2] Brows.esp
+  [FE 0D3] Odin - Summons Redone.esp
+  [FE 0D4] CCOR_JS Circlet Replacer Patch.esp
+  [FE 0D5] Morningstar - Minimalistic Races of Skyrim.esp
+  [FE 0D6] WerewolfQuickMenu.esp
+  [FE 0D7] NightEyeENBFix_NEO.esp
+  [FE 0D8] Misc Tweaks - Shrines Don't Cure Diseases - Wintersun Version.esp
+  [FE 0D9] Saddlebags.esp
+  [FE 0DA] Dynamic Things Alternative.esp
+  [FE 0DB] JKs Skyrim - AI Overhaul Patch.esp
+  [FE 0DC] CWE - JK - United - AI Overhaul.esp
+  [FE 0DD] Misc Tweaks - No Starting Spells - AI Overhaul Version.esp
+  [FE 0DE] RDO - USSEP Patch.esp
+  [FE 0DF] RDO Updated.esp
+  [FE 0E0] Honed Metal Voiced.esp
+  [FE 0E1] More Dialogue Options.esp
+  [FE 0E2] SDA RDO Patch.esp
+  [FE 0E3] SDA_SDE Patch.esp
+  [FE 0E4] SDA Wintersun Patch.esp
+  [FE 0E5] Hunters Dialogue Edit.esp
+  [FE 0E6] Hunters Not Bandits.esp
+  [FE 0E7] ThugsNotAssassins.esp
+  [FE 0E8] PnP_FacegenForKids.esp
+  [FE 0E9] PnP - HFMultiKid Patch.esp
+  [FE 0EA] AAA_PNP_USSEP_FacegenForKids.esp
+  [FE 0EB] Immersive Patrols II Simplified No Merchants.esp
+  [FE 0EC] ICNs_ImmersiveCollegeNPCs.esp
+  [FE 0ED] OCW_ICNs_OE_FEPatch.esp
+  [FE 0EE] JKs Skyrim_BOYD_Patch.esp
+  [FE 0EF] JKs Skyrim_Dawnstar_BOYD_NSUTR_Patch.esp
+  [FE 0F0] WICourierRadiant.esp
+  [FE 0F1] BetterQuestObjectives.esp
+  [FE 0F2] ThugsNotAssassins_TIE.esp
+  [FE 0F3] RadiantRequirements.esp
+  [FE 0F4] Miscellaneous Quests...as Miscellaneous Quests.esp
+  [FE 0F5] AngisCampTweaks.esp
+  [FE 0F6] LovelyLetter.esp
+  [FE 0F7] Finding_Derkeethus.esp
+  [FE 0F8] Finding_Helgi_and_Laelette.esp
+  [FE 0F9] ELFX_FindingHaL_Patch.esp
+  [FE 0FA] JKS_FindingHaL_Patch.esp
+  [FE 0FB] FSA_FindingSusannaAlive.esp
+  [FE 0FC] CompanionsTweaks.esp
+  [FE 0FD] More Radiant Quests for the Companions.esp
+  [FE 0FE] mpThievesNightOnTheTown.esp
+  [FE 0FF] mpThievesNightOnTheTown_JKSkyrim_patch.esp
+  [FE 100] CollegeEntry.esp
+  [FE 101] MCWT_ACollegeCoup.esp
+  [FE 102] MCWT_ACollegeCoup_OCW.esp
+  [FE 103] MCWT_ACollegeCoup_ICNs_OE.esp
+  [FE 104] MCWT_ArnielsAppeals.esp
+  [FE 105] MCWT_DeadDunmerDelivery.esp
+  [FE 106] MCWT_ExpiditeTheExpirate.esp
+  [FE 107] MCWT_GovernableGatekeeper.esp
+  [FE 108] MCWT_UnflappableFaculty.esp
+  [FE 109] MCWT_InescapableInsights_EBQO_QaiS.esp
+  [FE 10A] CYA_ChooseYourOwnArchMage.esp
+  [FE 10B] Finding_VelehkSain.esp
+  [FE 10C] BetterQuestObjectives-PaarDilemmaPatch.esp
+  [FE 10D] BuyableGoldenClaw.esp
+  [FE 10E] Arena.esp
+  [FE 10F] Mortal Enemies - Rival Remix - NoRunWalkChanges.esp
+  [FE 110] Athletik Combat SSE.esp
+  [FE 111] Realistic Melee Range.esp
+  [FE 112] NoBSAIProjectileDodge.esp
+  [FE 113] Realistic AI Detection 2 SE - Medium Interior, Medium Exterior.esp
+  [FE 114] Deadly Dragons - Wyrmstooth.esp
+  [FE 115] Improved Traps.esp
+  [FE 116] DisarmingTrapsIsDangerous.esp
+  [FE 117] SkyTEST Less Fear SSE Patch.esp
+  [FE 118] NARC SE for SkyTEST.esp
+  [FE 119] NoRoadPredatorsRedone_LessPredators.esp
+  [FE 11A] Deadly Dragons - DDC and Splendor.esp
+  [FE 11B] ogCannibalDraugr.esp
+  [FE 11C] BriDO-ogCannibalDraugrPatch.esp
+  [FE 11D] BriDO-DUIPatch.esp
+  [FE 11E] BriDO-CDUIPatch.esp
+  [FE 11F] WendigoAndHowler.esp
+  [FE 120] Morrowloot Miscellania - Hybrid Loot.esp
+  [FE 121] OCW_MLM_FEPatch.esp
+  [FE 122] Morrowloot Miscellania - Dremora Bound Weapons.esp
+  [FE 123] Morrowloot Miscellania - No Fortify Crafting.esp
+  [FE 124] Grabbing owned Items Is Stealing.esp
+  [FE 125] Summermyst Bugfixes for WACCF.esp
+  [FE 126] EnchantingAdjustments - Unique Weapons Add-on.esp
+  [FE 127] EnchantingAdjustments - WACCF.esp
+  [FE 128] EnchantingAdjustments - Summermyst.esp
+  [FE 129] Evenstar - Minimalistic Standing Stones of Skyrim.esp
+  [FE 12A] JKs Skyrim_Thunderchild_Patch.esp
+  [FE 12B] RoM - Dragon Priest Masks Pack.esp
+  [FE 12C] Favor Jobs Overhaul.esp
+  [FE 12D] Scarecrows_of_Skyrim.esp
+  [FE 12E] MannequinManagement.esp
+  [FE 12F] DragonCombatDialogue.esp
+  [FE 130] CrimeFactionAlikr.esp
+  [FE 131] ContrabandConfiscation.esp
+  [FE 132] Delphine's Map Reveals Dragon Mounds.esp
+  [FE 133] Bring Meeko to Lod.esp
+  [FE 134] SeranasTombBloodCurse.esp
+  [FE 135] SolstheimMudcrabs.esp
+  [FE 136] Whiterun Koi.esp
+  [FE 137] Khajiit Caravan Mules.esp
+  [FE 138] Animated Armoury - Fixes.esp
+  [FE 139] Animated Armoury - WACCF Patch.esp
+  [FE 13A] Animated Armory - CCOR Patch.esp
+  [FE 13B] OCW_ACE_FEPatch.esp
+  [FE 13C] Armour_of_Yngol.esp
+  [FE 13D] OCW_AtTotTB_FEPatch.esp
+  [FE 13E] ClockworkPlantableAddon.esp
+  [FE 13F] JKs Skyrim_Clockwork_Patch.esp
+  [FE 140] RTDocks - Clockwork.esp
+  [FE 141] CapitalWindhelmExpansion - Clockwork.esp
+  [FE 142] Keld-Nar + Clockwork Patch.esp
+  [FE 143] NARC SE patch - Forgotten City.esp
+  [FE 144] FC_FacegenForKids.esp
+  [FE 145] tpos_forgottencity_entrance.esp
+  [FE 146] OCW_ToK_FEPatch.esp
+  [FE 147] ogFalkreathHauntings.esp
+  [FE 148] Falkreath Hauntings - JKs Skyrim Patch.esp
+  [FE 149] IdentityCrisis - BetterDGEntrance.esp
+  [FE 14A] Wintersun Patch.esp
+  [FE 14B] Missives - Solstheim.esp
+  [FE 14C] Missives - Wyrmstooth.esp
+  [FE 14D] Missive - Experience Patch.esp
+  [FE 14E] 3DNPC0.esp
+  [FE 14F] 3DNPC Alternative Locations.esp
+  [FE 150] 3DNPC Navmesh Fix.esp
+  [FE 151] NSUTR - Interesting NPC Patch.esp
+  [FE 152] 3DNPC - LoS II - Tamriel Master Lights addon.esp
+  [FE 153] 3D_FacegenForKids.esp
+  [FE 154] OCW_3DNPC_FEPatch.esp
+  [FE 155] MCWT_ACollegeCoup_3DNs.esp
+  [FE 156] WiZkiD Signs - Interesting NPC patch.esp
+  [FE 157] IE_FaceGenForKids.esp
+  [FE 158] SDA NFF Patch.esp
+  [FE 159] AOS_Cathedral Weathers Patch.esp
+  [FE 15A] OCW_AO_FEPatch.esp
+  [FE 15B] Morrowloot Miscellania - Dremora Bound Weapons - AOS Patch.esp
+  [FE 15C] Praedy's Gemstones ISCPatched.esp
+  [FE 15D] Praedy's SoulEssenceGem.esp
+  [FE 15E] AOS_ISC_Integration.esp
+  [FE 15F] SoS_Cathedral_Patch.esp
+  [FE 160] SoS_ELFX_Patch.esp
+  [FE 161] OCW_SoS_FEPatch.esp
+  [FE 162] Yet Another Music Merge.esp
+  [FE 163] DaedricArmorLight.esp
+  [FE 164] GhostLight.esp
+  [FE 165] FNIS.esp
+  [FE 166] Conditional Expressions.esp
+  [FE 167] zxlice backstab and parry.esp
+  [FE 168] MBO.esp
+  [FE 169] SprintSlideUltDodge.esp
+  [FE 16A] Realistic Water Two - Landscape For Grass Mods Patch.esp
+  [FE 16B] JKs Skyrim_RWT_Patch.esp
+  [FE 16C] FDILOTDBPatch.esp
+  [FE 16D] IFDWACCFPatch.esp
+  [FE 16E] FDIELnFXPatch.esp
+  [FE 16F] IFDImmPatrolsIIPatch.esp
+  [FE 170] DawnGuardDoorsIFDPatch.esp
+  [FE 171] OCW_CellSettings.esp
+  [FE 172] RelicHunter_Grass_Patch.esp
+  [FE 173] Landscape Fixes For Grass mods - Alternate start Locations.esp
+  [FE 174] RoriksteadBasaltCliffs - Alternate Start + Rorikstead + Landscape Fixes for Grass Mods Patch.esp
+  [FE 175] Misc Dialogue Edits.esp
+  [FE 176] Harder Mara Quests.esp
+  [FE 177] BetterQuestObjectives-AlternateStartPatch.esp
+  [FE 178] ELE-ELFX Patch AIO.esp
+  [FE 179] SoS_ELE_Patch.esp
+  [FE 17A] Elysium - Conflict Resolution Patch.esp
+  [FE 17B] Elysium - Bosses Rebalanced and Releveled.esp
+  [FE 17C] Elysium - ENB Light Patch.esp
+  [FE 17D] Elysium - MCM Automation.esp
+  [FE 17E] BCS_TCIY_Patch.esp
+  [FE 17F] DBM_3DNPC_Patch.esp
+  [FE 180] DBM_AOS_Patch.esp
+  [FE 181] DBM_ArtifactsofBoethiah_Patch.esp
+  [FE 182] DBM_CCOR_Patch.esp
+  [FE 183] DBM_Clockwork_Patch.esp
+  [FE 184] DBM_DepthsofSkyrim_Patch.esp
+  [FE 185] DBM_ELFX_Patch.esp
+  [FE 186] DBM_ForgottenCity_Patch.esp
+  [FE 187] DBM_Fossils_Patch.esp
+  [FE 188] DBM_IceBladeMonarch_Patch.esp
+  [FE 189] DBM_IdentityCrisis_Patch.esp
+  [FE 18A] DBM_Inigo_Patch.esp
+  [FE 18B] DBM_ISC_Patch.esp
+  [FE 18C] DBM_JKSkyrim_Patch.esp
+  [FE 18D] DBM_ktWeaponPackSE_Patch.esp
+  [FE 18E] DBM_Missives_Patch.esp
+  [FE 18F] DBM_MM_Patch.esp
+  [FE 190] DBM_NewArmoury.esp
+  [FE 191] DBM_OBIS_Patch.esp
+  [FE 192] DBM_ROM_Patch.esp
+  [FE 193] DBM_RuinsClutterImproved_Patch.esp
+  [FE 194] DBM_SkyTEST_Patch.esp
+  [FE 195] DBM_SMIM_Patch.esp
+  [FE 196] DBM_TGCoS_Patch.esp
+  [FE 197] DBM_TOK_Patch.esp
+  [FE 198] DBM_TradeBarter_Patch.esp
+  [FE 199] DBM_Vigilant_Patch.esp
+  [FE 19A] DBM_WACCF_Patch.esp
+  [FE 19B] DBM_Wintersun_Patch.esp
+  [FE 19C] DBM_Wyrmstooth_Patch.esp
+  [FE 19D] DBM_ZephyrRedone_Patch.esp
+  [FE 19E] DBM_ZimsThaneWeapons_Patch.esp
+  [FE 19F] LOTD_TCC_3DNPC.esp
+  [FE 1A0] LOTD_TCC_Boethiah.esp
+  [FE 1A1] LOTD_TCC_Clockwork.esp
+  [FE 1A2] LOTD_TCC_Follower_Inigo.esp
+  [FE 1A3] LOTD_TCC_Fossils.esp
+  [FE 1A4] LOTD_TCC_IceBlade.esp
+  [FE 1A5] LOTD_TCC_IdentityCrisis.esp
+  [FE 1A6] LOTD_TCC_Kagrenac.esp
+  [FE 1A7] LOTD_TCC_Kthonia.esp
+  [FE 1A8] LOTD_TCC_NewArmoury.esp
+  [FE 1A9] LOTD_TCC_RoM.esp
+  [FE 1AA] LOTD_TCC_SafehousePlus.esp
+  [FE 1AB] LOTD_TCC_TFC.esp
+  [FE 1AC] LOTD_TCC_Vigilant.esp
+  [FE 1AD] LOTD_TCC_Wintersun.esp
+  [FE 1AE] LOTD_TCC_Wyrmstooth.esp
+  [FE 1AF] LOTD_TCC_ZimThaneOnly.esp
+  [FE 1B0] Custom LotD Patchwork.esp
+  [FE 1B1] AllGUD - Alternate Textures Patch.esp
+  [FE 1B2] Disable Combat Boundary - xEdit Patch Output.esp
+  [FE 1B3] Weapon Speed Effects Fix - xEdit Patch Output.esp
+  [FE 1B4] Animated Armoury Range Fix.esp
+  [FE 1B5] KSHairdosSMP.esp
+  [FE 1B6] KSWigsSMP.esp
+  [FE 1B7] 3BBB.esp
+  [FE 1B8] Open Monk Robes.esp
+  [FE 1B9] Open Monk Robes - Armor and Clothing Extension Patch.esp
+  [FE 1BA] BetterContainerControls.esp
+  [FE 1BB] FMS_FemaleMakeupSuite.esp
+  [FE 1BC] Ivy.esp
+  [FE 1BD] SFO_SkinFeatureOverlays.esp
+  [FE 1BE] Wolfpaint_Face.esp
+  [FE 1BF] SBP_SimpleBellyPaints.esp
+  [FE 1C0] Lupine_YyvengarBodypaints.esp
+  [FE 1C1] Vilja Re-Imagined SE.esp
+  [FE 1C2] High Poly NPCs - WheelsOfLull.esp
+  [FE 1C3] SDA-LustmordPatch.esp
+  [FE 1C4] Sofia Uses Custom Body Meshes.esp
+  [FE 1C5] Black Rose.esp
+  [FE 1C6] Falskaar - Bug Fixes.esp
+  [FE 1C7] Falskaar - SkyTEST Patch.esp
+  [FE 1C8] Missives - Falskaar Patch.esp
+  [FE 1C9] playerequipmentmanager.esp
+  [FE 1CA] DBM_TheBrotherhoodOfOldPatch.esp
+  [FE 1CB] Flower Girls NPC Overhaul - KS Hairdos Patch.esp
+  [FE 1CC] Flower Girls NPC Relationships.esp
+  [FE 1CD] Sex Scene Framework.esp
+  [FE 1CE] Sex Scene Framework - Flower Girls.esp
+  [FE 1CF] Sex Scene Framework - Lore Friendly Relationships.esp
+  [FE 1D0] Secret Lives - Great Solitude.esp
+  [FE 1D1] Secret Lives - IDG.esp
+  [FE 1D2] Secret Lives - JKs Skyrim.esp
+  [FE 1D3] Secret Lives.esp
+  [FE 1D4] SDA-AA Patch.esp
+  [FE 1D5] Secret Lives - OCW & ICN.esp
+  [FE 1D6] Simply Rest Anywhere.esp
+  [FE 1D7] Castle Volkihar Rebuilt - RDO Patch.esp
+  [FE 1D8] Castle Volkihar Rebuilt - SDE Patch.esp
+  [FE 1D9] EBQO_QAIS-USSEP_Patch.esp
+  [FE 1DA] Occlusion.esp
+}
